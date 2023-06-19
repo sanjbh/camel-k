@@ -11,7 +11,6 @@ import org.apache.camel.model.dataformat.JsonLibrary;
 public class Customer extends RouteBuilder {
   @Override
   public void configure() throws Exception {
-
       rest()
         .get()
           .path("/customers/{name}").to("direct:get")
